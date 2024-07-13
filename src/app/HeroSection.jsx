@@ -1,18 +1,14 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Grid, Box,useMediaQuery } from "@mui/material";
+import { Grid, Box, useMediaQuery } from "@mui/material";
 import { styled } from "@mui/system";
 import { motion } from "framer-motion";
-import {
-  isSmallScreens,
-} from "./Constants/Constants";
-
+import { isSmallScreens } from "./Constants/Constants";
 
 const backgroundImageUrl = "/images/bg-img.png";
 
 const BackgroundContainer = styled(Box)({
-  
   backgroundImage: `url(${backgroundImageUrl})`,
   backgroundSize: "cover",
   backgroundPosition: "center",
@@ -30,7 +26,7 @@ const CircleContainer = styled(Box)({
   alignItems: "center",
 });
 
-const VideoCircle = styled(Box)(({isSmallScreen }) => ({
+const VideoCircle = styled(Box)(({ isSmallScreen }) => ({
   width: isSmallScreen ? "235px" : "400px",
   height: isSmallScreen ? "235px" : "400px",
   borderRadius: "50%",
@@ -39,7 +35,7 @@ const VideoCircle = styled(Box)(({isSmallScreen }) => ({
   zIndex: 1,
 }));
 
-const ImageCircle = styled(Box)(({isSmallScreen }) => ({
+const ImageCircle = styled(Box)(({ isSmallScreen }) => ({
   width: isSmallScreen ? "255px" : "450px",
   height: isSmallScreen ? "255px" : "450px",
   position: "absolute",

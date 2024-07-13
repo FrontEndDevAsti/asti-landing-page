@@ -17,25 +17,25 @@ function Accreditation() {
   return (
     <>
       <Grid py={"50px"}>
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: {
-              duration: 0.8,
-              delay: 0.3,
-              ease: [0.44, 0, 0, 1],
-            },
-          }}
-          viewport={{
-            amount: "some",
-            once: true,
-          }}
-          className="poppins-medium  text-[33px] leading-[36.3px] tracking-[-1px] text-[#0f1728] md:text-[46px] md:leading-[50.6px] md:tracking-[-1.5px] sm:text-center"
-        >
-          Our Recognition & Accreditation
-        </motion.h2>
+      <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 0.8,
+                delay: 0.3,
+                ease: [0.44, 0, 0, 1],
+              },
+            }}
+            viewport={{
+              amount: "some",
+              once: true,
+            }}
+            className="poppins-medium text-[33px] text-center leading-[36.3px] tracking-[-1px] text-[#0f1728] md:text-[46px] md:leading-[50.6px] md:tracking-[-1.5px]"
+          >
+            Our Recognition & Accreditation
+          </motion.h2>
 
         <div>
           <Marquee direction="left" speed={100} delay={5}>

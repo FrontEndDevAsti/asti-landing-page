@@ -8,8 +8,26 @@ const Step = ({ step, title, description, icon, color }: { step: string, title: 
       {icon}
     </div> */}
     <div>
-      <h3 className="text-xl font-bold mb-1">{title}</h3>
-      <p className="text-gray-500">{description}</p>
+    <motion.h6
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3, ease: [0.44, 0, 0, 1] }}
+                className="poppins-medium text-[23px] leading-[26.3px] tracking-[-1px] text-[#0f1728] md:text-[26px] md:leading-[20.6px] md:tracking-[-1.5px] pb-4"
+                style={{ marginBottom: '10px' }} // Adjust margin-bottom as needed
+              >
+                {title}
+              </motion.h6>
+              <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4, ease: [0.44, 0, 0, 1] }}
+                className={`mb-2 text-[#475466] text-[16px] leading-[24px] flex items-center transition-all duration-300 opacity-0`}
+              >
+                
+                {description}
+              </motion.p>
+      {/* <h3 className="text-xl font-bold mb-1"></h3>
+      <p className="text-gray-500"></p> */}
     </div>
   </div>
 );
@@ -47,29 +65,36 @@ const Pathway = () => {
         <div className="relative pl-10">
           <Step
             step="1"
-            title="🖥️ Attend a class with top IELTS trainer"
-            description="Get the best of both worlds by attending our interactive and personalized session with only 5 students, from the comfort of your home and at your preferred time. A new class starts every 15 mins!"
+            title="📝 Level 3"
+            description="Diploma (Foundation)"
             icon="📘"
             color="bg-orange-500"
           />
           <Step
             step="2"
-            title="📝 Take the Band Predictor Test"
-            description="Know where your preparation stands and identify your weak areas."
+            title="📚 Level 4 & 5"
+            description="Higher International Diploma (240 credits)"
             icon="✏️"
             color="bg-blue-500"
           />
           <Step
             step="3"
-            title="👨‍🏫 Expert Evaluation and Feedback"
-            description="After the test, get 1 on 1 personalised feedback from your instructor. Learn strategies, tips and tricks, based on your performance."
+            title="👨‍🏫 Level 6"
+            description="Bachelors Degree(360 credits)"
             icon="👩‍🏫"
             color="bg-green-500"
           />
           <Step
             step="4"
-            title="🎓 Ace IELTS with confidence"
-            description="Apply your learnings and score a 7+ IELTS band in your 1st attempt."
+            title="🖥️ Level 7"
+            description="Master's Degree"
+            icon="📝"
+            color="bg-orange-500"
+          />
+           <Step
+            step="5"
+            title="🎓 Level 8"
+            description="PhD / Doctorate Degree"
             icon="📝"
             color="bg-orange-500"
           />

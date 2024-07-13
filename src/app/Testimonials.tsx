@@ -49,7 +49,7 @@ function Testimonials() {
             amount: "some",
             once: true,
           }}
-          className="poppins-medium  text-[33px] leading-[36.3px] tracking-[-1px] text-[#0f1728] md:text-[46px] md:leading-[50.6px] md:tracking-[-1.5px] sm:text-center"
+          className="poppins-medium  text-[33px] text-center leading-[36.3px] tracking-[-1px] text-[#0f1728] md:text-[46px] md:leading-[50.6px] md:tracking-[-1.5px] sm:text-center"
         >
           Dont take our word for it.
         </motion.h2>
@@ -72,9 +72,9 @@ function Testimonials() {
         HEAR DIRECTLY FROM OUR GRADUATES AT ASTI ACADEMY
         </motion.h4></Box>
 
-      <Grid container direction="row" justifyContent="space-evenly" spacing={2} px={8}>
+      <Grid container direction="row" alignItems={"center"} justifyContent="center" spacing={2} px={8}>
         {videoData.map((video, index) => (
-          <Grid key={index} item xs={12} sm={12} md={3} lg={3} p={2} height={isSmallScreen ? "100px" : "500px"}>
+          <Grid key={index} item xs={12} sm={12} md={3} lg={3} p={2} height={isSmallScreen ? "200px" : "495px"} width={"275px"}>
             {isClient && (
               <ReactPlayer
                 url={video.url}

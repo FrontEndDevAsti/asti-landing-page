@@ -31,7 +31,7 @@ function Alumni() {
             amount: "some",
             once: true,
           }}
-          className="poppins-medium  text-[33px] leading-[36.3px] tracking-[-1px] text-[#0f1728] md:text-[46px] md:leading-[50.6px] md:tracking-[-1.5px] sm:text-center"
+          className="poppins-medium  text-[33px] text-center leading-[36.3px] tracking-[-1px] text-[#0f1728] md:text-[46px] md:leading-[50.6px] md:tracking-[-1.5px] sm:text-center"
         >
           Our Alumni Work at:
         </motion.h2>

@@ -54,7 +54,15 @@ const ProgramFor = () => {
               }}
               className="flex flex-col xl:flex-row gap-4 items-center md:items-start w-full md:w-[376px] md:py-6 md:pl-8 rounded-[24px]"
             >
-              <img src="/svg/fingerprint-two.svg" alt="" className="w-[96px]" />
+              <div
+  className="w-32 aspect-square rounded-full relative flex justify-center items-center animate-[spin_3s_linear_infinite] z-40 bg-[conic-gradient(white_0deg,white_300deg,transparent_270deg,transparent_360deg)] before:animate-[spin_2s_linear_infinite] before:absolute before:w-[60%] before:aspect-square before:rounded-full before:z-[80] before:bg-[conic-gradient(white_0deg,white_270deg,transparent_180deg,transparent_360deg)] after:absolute after:w-3/4 after:aspect-square after:rounded-full after:z-[60] after:animate-[spin_3s_linear_infinite] after:bg-[conic-gradient(#a61313_0deg,#a61313_180deg,transparent_180deg,transparent_360deg)]"
+>
+  <span
+    className="absolute w-[85%] aspect-square rounded-full z-[60] animate-[spin_5s_linear_infinite] bg-[conic-gradient(#f87171_0deg,#f87171_180deg,transparent_180deg,transparent_360deg)]"
+  >
+  </span>
+</div>
+
               <div className="w-full flex flex-col items-center md:items-start gap-1 md:gap-2">
                 <h3 className="font-medium text-[24px] leading-[28.8px] tracking-[-1px] text-[#0f1728]">
                 12th Grade Students
@@ -82,7 +90,14 @@ const ProgramFor = () => {
               }}
               className="flex flex-col xl:flex-row gap-4 items-center md:items-start w-full md:w-[376px] md:py-6 md:pl-8 rounded-[24px]"
             >
-              <img src="/svg/fingerprint-two.svg" alt="" className="w-[96px]" />
+              <div
+  className="w-32 aspect-square rounded-full relative flex justify-center items-center animate-[spin_3s_linear_infinite] z-40 bg-[conic-gradient(white_0deg,white_300deg,transparent_270deg,transparent_360deg)] before:animate-[spin_2s_linear_infinite] before:absolute before:w-[60%] before:aspect-square before:rounded-full before:z-[80] before:bg-[conic-gradient(white_0deg,white_270deg,transparent_180deg,transparent_360deg)] after:absolute after:w-3/4 after:aspect-square after:rounded-full after:z-[60] after:animate-[spin_3s_linear_infinite] after:bg-[conic-gradient(#a61313_0deg,#a61313_180deg,transparent_180deg,transparent_360deg)]"
+>
+  <span
+    className="absolute w-[85%] aspect-square rounded-full z-[60] animate-[spin_5s_linear_infinite] bg-[conic-gradient(#f87171_0deg,#f87171_180deg,transparent_180deg,transparent_360deg)]"
+  >
+  </span>
+</div>
               <div className="w-full flex flex-col items-center md:items-start gap-1 md:gap-2">
                 <h3 className="font-medium text-[24px] leading-[28.8px] tracking-[-1px] text-[#0f1728]">
                 Looking upgrade or change your career
@@ -110,7 +125,14 @@ const ProgramFor = () => {
               }}
               className="flex flex-col xl:flex-row gap-4 items-center md:items-start w-full md:w-[376px] md:py-6 md:pl-8 rounded-[24px]"
             >
-              <img src="/svg/fingerprint-two.svg"alt="" className="w-[96px]" />
+              <div
+  className="w-32 aspect-square rounded-full relative flex justify-center items-center animate-[spin_3s_linear_infinite] z-40 bg-[conic-gradient(white_0deg,white_300deg,transparent_270deg,transparent_360deg)] before:animate-[spin_2s_linear_infinite] before:absolute before:w-[60%] before:aspect-square before:rounded-full before:z-[80] before:bg-[conic-gradient(white_0deg,white_270deg,transparent_180deg,transparent_360deg)] after:absolute after:w-3/4 after:aspect-square after:rounded-full after:z-[60] after:animate-[spin_3s_linear_infinite] after:bg-[conic-gradient(#a61313_0deg,#a61313_180deg,transparent_180deg,transparent_360deg)]"
+>
+  <span
+    className="absolute w-[85%] aspect-square rounded-full z-[60] animate-[spin_5s_linear_infinite] bg-[conic-gradient(#f87171_0deg,#f87171_180deg,transparent_180deg,transparent_360deg)]"
+  >
+  </span>
+</div>
               <div className="w-full flex flex-col items-center md:items-start gap-1 md:gap-2">
                 <h3 className="font-medium text-[24px] leading-[28.8px] tracking-[-1px] text-[#0f1728]">
                 Working Professionals
@@ -141,7 +163,14 @@ const ProgramFor = () => {
               }}
               className="flex flex-col xl:flex-row gap-4 items-center md:items-start w-full md:w-[376px] md:py-6 md:pl-8 rounded-[24px]"
             >
-              <img src="/svg/fingerprint-two.svg" alt="" className="w-[96px]" />
+              <div
+  className="w-32 aspect-square rounded-full relative flex justify-center items-center animate-[spin_3s_linear_infinite] z-40 bg-[conic-gradient(white_0deg,white_300deg,transparent_270deg,transparent_360deg)] before:animate-[spin_2s_linear_infinite] before:absolute before:w-[60%] before:aspect-square before:rounded-full before:z-[80] before:bg-[conic-gradient(white_0deg,white_270deg,transparent_180deg,transparent_360deg)] after:absolute after:w-3/4 after:aspect-square after:rounded-full after:z-[60] after:animate-[spin_3s_linear_infinite] after:bg-[conic-gradient(#a61313_0deg,#a61313_180deg,transparent_180deg,transparent_360deg)]"
+>
+  <span
+    className="absolute w-[85%] aspect-square rounded-full z-[60] animate-[spin_5s_linear_infinite] bg-[conic-gradient(#f87171_0deg,#f87171_180deg,transparent_180deg,transparent_360deg)]"
+  >
+  </span>
+</div>
               <div className="w-full flex flex-col items-center md:items-start gap-1 md:gap-2">
                 <h3 className="font-medium text-[24px] leading-[28.8px] tracking-[-1px] text-[#0f1728]">
                 School or University dropout
@@ -169,7 +198,14 @@ const ProgramFor = () => {
               }}
               className="flex flex-col xl:flex-row gap-4 items-center md:items-start w-full md:w-[376px] md:py-6 md:pl-8 rounded-[24px]"
             >
-              <img src="/svg/fingerprint-two.svg" alt="" className="w-[96px]" />
+            <div
+  className="w-32 aspect-square rounded-full relative flex justify-center items-center animate-[spin_3s_linear_infinite] z-40 bg-[conic-gradient(white_0deg,white_300deg,transparent_270deg,transparent_360deg)] before:animate-[spin_2s_linear_infinite] before:absolute before:w-[60%] before:aspect-square before:rounded-full before:z-[80] before:bg-[conic-gradient(white_0deg,white_270deg,transparent_180deg,transparent_360deg)] after:absolute after:w-3/4 after:aspect-square after:rounded-full after:z-[60] after:animate-[spin_3s_linear_infinite] after:bg-[conic-gradient(#a61313_0deg,#a61313_180deg,transparent_180deg,transparent_360deg)]"
+>
+  <span
+    className="absolute w-[85%] aspect-square rounded-full z-[60] animate-[spin_5s_linear_infinite] bg-[conic-gradient(#f87171_0deg,#f87171_180deg,transparent_180deg,transparent_360deg)]"
+  >
+  </span>
+</div>
               <div className="w-full flex flex-col items-center md:items-start gap-1 md:gap-2">
                 <h3 className="font-medium text-[24px] leading-[28.8px] tracking-[-1px] text-[#0f1728]">
                 Looking for distance or online education
@@ -197,7 +233,15 @@ const ProgramFor = () => {
               }}
               className="flex flex-col xl:flex-row gap-4 items-center md:items-start w-full md:w-[376px] md:py-6 md:pl-8 rounded-[24px]"
             >
-              <img src="/svg/fingerprint-two.svg" alt="" className="w-[96px]" />
+               <div
+  className="w-32 aspect-square rounded-full relative flex justify-center items-center animate-[spin_3s_linear_infinite] z-40 bg-[conic-gradient(white_0deg,white_300deg,transparent_270deg,transparent_360deg)] before:animate-[spin_2s_linear_infinite] before:absolute before:w-[60%] before:aspect-square before:rounded-full before:z-[80] before:bg-[conic-gradient(white_0deg,white_270deg,transparent_180deg,transparent_360deg)] after:absolute after:w-3/4 after:aspect-square after:rounded-full after:z-[60] after:animate-[spin_3s_linear_infinite] after:bg-[conic-gradient(#a61313_0deg,#a61313_180deg,transparent_180deg,transparent_360deg)]"
+>
+  <span
+    className="absolute w-[85%] aspect-square rounded-full z-[60] animate-[spin_5s_linear_infinite] bg-[conic-gradient(#f87171_0deg,#f87171_180deg,transparent_180deg,transparent_360deg)]"
+  >
+  </span>
+</div>
+              {/* <img src="/svg/fingerprint-two.svg" alt="" className="w-[96px]" /> */}
               <div className="w-full flex flex-col items-center md:items-start gap-1 md:gap-2">
                 <h3 className="font-medium text-[24px] leading-[28.8px] tracking-[-1px] text-[#0f1728]">
                 Looking for a Vocational British Qualification
