@@ -169,7 +169,7 @@ function Comparison() {
                 p={2}
               >
                  
-                <Image src="/images/logo-2.png" height={70} width={80} />
+                <Image src="/images/logo-2.png" height={70} width={80} alt="logo"/>
                
               </Box>
               <Stack spacing={1} px={5} py={2}>
