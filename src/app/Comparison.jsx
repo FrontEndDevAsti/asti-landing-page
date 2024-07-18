@@ -4,6 +4,7 @@ import { Grid, Box, Stack, useMediaQuery } from "@mui/material";
 import { motion } from "framer-motion";
 import { CheckCircle, Cancel } from "@mui/icons-material";
 import { isSmallScreens } from "./Constants/Constants";
+import Image from "next/image";
 
 const astiData = [
   {
@@ -168,7 +169,7 @@ function Comparison() {
                 p={2}
               >
                  
-                <img src="/images/logo-2.png" height={"70px"} width={"80px"}></img>
+                <Image src="/images/logo-2.png" height={70} width={80} />
                
               </Box>
               <Stack spacing={1} px={5} py={2}>
@@ -203,11 +204,7 @@ justifyContent={"center"}
               pl={"0px !important"}
 
             >
-              <img
-                src="/images/vs-red.png"
-                alt="Center Image"
-                style={{ maxWidth: "100%", height: "auto" }}
-              />
+              <Image src="/images/vs-red.png" alt="alt" width={60} height={60} />
             </Grid>
 
             <Grid

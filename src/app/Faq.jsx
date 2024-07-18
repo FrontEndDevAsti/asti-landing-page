@@ -57,7 +57,7 @@ function Faq() {
               Still not convinced?
             </h3>
             <h3 className="text-[#000000] mt- [-8px] md:mt-[-0px] text-center md:text-left">
-              We've got the answers
+              We have got the answers
             </h3>
           </motion.div>
         </div>

@@ -3,6 +3,7 @@ import { Grid } from "@mui/material";
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const images = [
   "/images/200 x 200-01.png",
@@ -50,7 +51,7 @@ function Accreditation() {
                 alignItems={"center"}
                 justifyContent={"center"}
               >
-                <img src={src} alt={`Logo ${index + 1}`} />
+                <Image width={150} height={150} src={src} alt={`Logo ${index + 1}`} />
               </Grid>
             ))}
           </Marquee>

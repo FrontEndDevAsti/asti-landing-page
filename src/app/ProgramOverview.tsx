@@ -9,6 +9,7 @@ import CreditCardIcon from "@mui/icons-material/CreditCard";
 import VerifiedIcon from "@mui/icons-material/Verified";
 import ClassIcon from "@mui/icons-material/Class";
 import { isSmallScreens } from "./Constants/Constants";
+import Image from "next/image";
 
 const Benefits = () => {
 
@@ -84,10 +85,12 @@ const Card = ({ card }: { card: CardType }) => {
         spacing={4}
       >
         <Grid item xs={12} sm={6}>
-          <img
+          {/* <img
             src={card.url}
             alt={card.title}
             className="rounded-lg object-cover h-full w-full"
+          /> */}
+          <Image src={card.url} alt="" height={600} width={1050}             className="rounded-lg object-cover h-full w-full"
           />
         </Grid>
         <Grid item xs={12} sm={6}>
@@ -151,7 +154,7 @@ type CardType = {
 
 const cards: CardType[] = [
   {
-    url: "https://asti.academy/assets/images/latest/mechanical.jpg",
+    url: "/images/mechanical.jpg",
     title: "Mechanical Engineering",
     id: 1,
     details: [
@@ -163,7 +166,7 @@ const cards: CardType[] = [
     ],
   },
   {
-    url: "https://asti.academy/assets/images/latest/automobile.jpg",
+    url: "/images/automobile.jpg",
     title: "Automobile Engineering",
     id: 2,
     details: [
@@ -175,7 +178,7 @@ const cards: CardType[] = [
     ],
   },
   {
-    url: "https://asti.academy/assets/images/latest/electrical.jpg",
+    url: "/images/electrical.jpg",
     title: "Electrical & Electronic Engineering",
     id: 3,
     details: [
@@ -187,7 +190,7 @@ const cards: CardType[] = [
     ],
   },
   {
-    url: "https://asti.academy/assets/images/latest/civil.jpg",
+    url: "/images/civil.jpg",
     title: "Civil Engineering",
     id: 5,
     details: [
@@ -199,7 +202,7 @@ const cards: CardType[] = [
     ],
   },
   {
-    url: "https://asti.academy/assets/images/latest/IT.jpg",
+    url: "/images/IT.jpg",
     title: "Information Technology Engineering",
     id: 6,
     details: [

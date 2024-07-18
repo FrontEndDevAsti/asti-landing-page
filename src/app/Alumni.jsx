@@ -3,6 +3,7 @@ import { Grid } from '@mui/material';
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 const images = [
   "/images/Adnoc.png",
@@ -40,7 +41,7 @@ function Alumni() {
         <Marquee direction="right" speed={100} delay={5}>
           {images.map((src, index) => (
             <Grid height={"150px"} width={"150px"} key={index} className="image_wrapper" display={"flex"} alignItems={"center"} justifyContent={"center"} py={3}>
-              <img src={src} alt={`Logo ${index + 1}`} />
+              <Image height={150} width={150} src={src} alt={`Logo ${index + 1}`} />
              </Grid>
 
           ))}

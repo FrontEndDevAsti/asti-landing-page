@@ -4,6 +4,7 @@ import React, { useState, useContext } from "react";
 import { motion } from "framer-motion";
 import { Container, Grid } from "@mui/material";
 import WrapDown from "./Components/WrapDown";
+import Image from "next/image";
 
 function OutCome() {
   return (
@@ -36,10 +37,11 @@ function OutCome() {
           justifyContent={"center"}
         >
           <Grid item xs={12} md={6}>
-            <img
-              className="w-full h-auto"
-              src="https://media.gettyimages.com/id/472361319/vector/success-education.jpg?s=612x612&w=0&k=20&c=hTMuQB5NJlMHT2E19-W4b7V5wsyAUb917JurLNUq6ek="
+            <Image
+              src="/images/book.jpg"
               alt="About Thumb 1"
+              height={500}
+              width={500}
             />
           </Grid>
           <Grid item xs={12} md={6}>

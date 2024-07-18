@@ -2,6 +2,7 @@
 import React from "react";
 import { Grid } from "@mui/material";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Step = ({ step, title, description, icon, color }) => (
   <div className="flex items-start gap-2 mb-4 relative">
@@ -59,7 +60,8 @@ const Pathway = () => {
 
         <div className="relative">
           <div className="absolute left-5 top-0 h-[450px]">
-            <img style={{ height: "450px" }} src="/images/path-line.png" alt="Path Line" />
+            {/* <img style={{ height: "450px" }} src="/images/path-line.png" alt="Path Line" /> */}
+            <Image src="/images/path-line.png" height={450} width={11} alt="path line"/>
           </div>
           <div className="relative pl-10">
             <Step
