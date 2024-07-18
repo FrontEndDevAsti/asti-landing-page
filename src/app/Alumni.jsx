@@ -31,7 +31,7 @@ function Alumni() {
             amount: "some",
             once: true,
           }}
-          className="poppins-medium  text-[33px] text-center leading-[36.3px] tracking-[-1px] text-[#0f1728] md:text-[46px] md:leading-[50.6px] md:tracking-[-1.5px] sm:text-center"
+          className="poppins-medium  text-[33px] text-center leading-[36.3px] tracking-[-1px] text-[#000000] md:text-[46px] md:leading-[50.6px] md:tracking-[-1.5px] sm:text-center"
         >
           Our Alumni Work at:
         </motion.h2>
@@ -39,10 +39,8 @@ function Alumni() {
       <div>
         <Marquee direction="right" speed={100} delay={5}>
           {images.map((src, index) => (
-            <Grid height={"150px"} width={"150px"} key={index} className="image_wrapper" display={"flex"} alignItems={"center"} justifyContent={"center"}>
-            {/* <div key={index} className="image_wrapper"> */}
+            <Grid height={"150px"} width={"150px"} key={index} className="image_wrapper" display={"flex"} alignItems={"center"} justifyContent={"center"} py={3}>
               <img src={src} alt={`Logo ${index + 1}`} />
-            {/* </div> */}
              </Grid>
 
           ))}

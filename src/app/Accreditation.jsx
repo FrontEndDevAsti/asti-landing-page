@@ -5,12 +5,14 @@ import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
 
 const images = [
-  "https://asti.academy/assets/images/Accreditation%20Logos_116x%2025/higher%20education-04.jpg",
-  "https://asti.academy/assets/images/Accreditation%20Logos_116x%2025/khda-01.jpg",
-  "https://asti.academy/assets/images/Accreditation%20Logos_116x%2025/ministry-03.jpg",
-  "https://asti.academy/assets/images/Accreditation%20Logos_116x%2025/higher%20education-04.jpg",
-  "https://asti.academy/assets/images/Accreditation%20Logos_116x%2025/khda-01.jpg",
-  "https://asti.academy/assets/images/Accreditation%20Logos_116x%2025/ministry-03.jpg",
+  "/images/200 x 200-01.png",
+  "/images/200 x 200-02.png",
+  "/images/200 x 200-03.png",
+  "/images/200 x 200-04.png",
+  "/images/200 x 200-05.png",
+  "/images/200 x 200-06.png",
+  "/images/200 x 200-07.png",
+  "/images/200 x 200-08.png",
 ];
 
 function Accreditation() {
@@ -32,17 +34,16 @@ function Accreditation() {
               amount: "some",
               once: true,
             }}
-            className="poppins-medium text-[33px] text-center leading-[36.3px] tracking-[-1px] text-[#0f1728] md:text-[46px] md:leading-[50.6px] md:tracking-[-1.5px]"
+            className="poppins-medium text-[33px] text-center leading-[36.3px] tracking-[-1px] text-black md:text-[46px] md:leading-[50.6px] md:tracking-[-1.5px] pb-4"
           >
             Our Recognition & Accreditation
           </motion.h2>
 
-        <div>
+        <div className="bg-white">
           <Marquee direction="left" speed={100} delay={5}>
             {images.map((src, index) => (
               <Grid
-                height={"350px"}
-                width={"350px"}
+
                 key={index}
                 className="image_wrapper"
                 display={"flex"}

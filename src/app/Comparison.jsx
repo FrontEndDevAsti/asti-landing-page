@@ -107,7 +107,7 @@ function Comparison() {
         viewport={{
           amount: "some",
           once: true,
-        }}
+        }} 
       >
         <Box textAlign={"center"} pb={8}>
           {" "}
@@ -126,7 +126,7 @@ function Comparison() {
               amount: "some",
               once: true,
             }}
-            className="poppins-medium text-[33px] leading-[36.3px] tracking-[-1px] text-[#0f1728] md:text-[46px] md:leading-[50.6px] md:tracking-[-1.5px]"
+            className="poppins-medium text-[33px] leading-[36.3px] tracking-[-1px] text-[#000000] md:text-[46px] md:leading-[50.6px] md:tracking-[-1.5px]"
           >
             What makes ASTI the right choice for you
           </motion.h2>
@@ -137,16 +137,6 @@ function Comparison() {
           direction={"flex"}
           alignItems={"center"}
           justifyContent={"center"}
-          sx={{
-            backgroundImage:
-              'url("https://cdn.prod.website-files.com/6142f6521fff9ddbbc92142a/643d0b649868c13eb671bcdd_Curve.png")',
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            // height: "100vh",
-          }}
         >
           <Grid
             container
@@ -155,6 +145,7 @@ function Comparison() {
             justifyContent={"center"}
             spacing={3}
             mx={2}
+            
           >
             <Grid
               item
@@ -180,7 +171,7 @@ function Comparison() {
                 <img src="/images/logo-2.png" height={"70px"} width={"80px"}></img>
                
               </Box>
-              <Stack spacing={2} px={5} py={2}>
+              <Stack spacing={1} px={5} py={2}>
                 {astiData.map((item, index) => (
                   <Stack key={index}>
                     <Stack spacing={1} direction="row" alignItems="center">
@@ -191,7 +182,7 @@ function Comparison() {
                     </Stack>
                     <Box pl={4}>
                       <p
-                        className={`mb-2 text-[#475466] text-[16px] leading-[24px] flex items-center `}
+                        className={`text-[#475466] text-[16px] leading-[24px] flex items-center `}
                       >
                         {item.description}
                       </p>
@@ -206,12 +197,14 @@ function Comparison() {
               xs={12}
               sm={1}
               display="flex"
-              justifyContent="center"
-              alignItems="center"
+alignItems={"center"}
+justifyContent={"center"}
               p={isSmallScreen ? 2 : 0}
+              pl={"0px !important"}
+
             >
               <img
-                src="https://cdn.prod.website-files.com/6142f6521fff9ddbbc92142a/643e0b1c989cf6323971f0c3_S.png"
+                src="/images/vs-red.png"
                 alt="Center Image"
                 style={{ maxWidth: "100%", height: "auto" }}
               />
@@ -239,7 +232,7 @@ function Comparison() {
                 OTHERS
                 </h3>
               </Box>
-              <Stack spacing={2} px={5} py={2}>
+              <Stack spacing={1} px={5} py={2}>
                 {otherData.map((item, index) => (
                   <Stack key={index}>
                     <Stack spacing={1} direction="row" alignItems="center">
@@ -250,7 +243,7 @@ function Comparison() {
                     </Stack>
                     <Box pl={4}>
                       <p
-                        className={`mb-2 text-[#475466] text-[16px] leading-[24px] flex items-center `}
+                        className={` text-[#475466] text-[16px] leading-[24px] flex items-center `}
                       >
                         {item.description}
                       </p>

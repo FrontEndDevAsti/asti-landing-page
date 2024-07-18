@@ -19,7 +19,7 @@ export default function Home() {
         <NavBar />
         <HeroSection />
         <ProgramOverview />
-        {/* <ProgramModules /> */}
+        <ProgramModules />
         <ProgramFor />
         <Pathway />
         <Accreditation />

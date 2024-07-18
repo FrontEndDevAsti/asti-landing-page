@@ -21,6 +21,18 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/Alumni.jsx", "src/app/HeroSection.jsx", "src/app/Comparison.jsx", "src/app/Faq.jsx", "src/app/ProgramOverview.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/Alumni.jsx",
+    "src/app/HeroSection.jsx",
+    "src/app/Comparison.jsx",
+    "src/app/Faq.jsx",
+    "src/app/ProgramOverview.tsx",
+    "src/app/ProgramModules.jsx",
+    "src/app/Components/AnimatedText.tsx"
+, "src/app/WhyAsti.jsx", "src/app/ProgramFor.jsx", "src/app/Accreditation.jsx", "src/app/Pathway.jsx", "src/app/Testimonials.jsx", "src/app/OutCome.jsx"  ],
   "exclude": ["node_modules"]
 }

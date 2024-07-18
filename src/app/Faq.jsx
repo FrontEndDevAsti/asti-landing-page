@@ -9,7 +9,7 @@ function Faq() {
   };
   return (
     <>
-      <section className="bg-white flex flex-col items-center w-full pt-[60px] pb-[92px] md:pb-[80px] px-[24px] md:px-[32px] xl:px-[64px] gap-[60px] md:gap-[80px] relative">
+      <section className="flex flex-col items-center w-full pt-[60px] pb-[92px] md:pb-[80px] px-[24px] md:px-[32px] xl:px-[64px] gap-[60px] md:gap-[80px] relative">
         <div className="w-full flex flex-col items-center gap-[10px] md:w-[850px]">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -56,7 +56,7 @@ function Faq() {
             <h3 className="text-[#a3a6ae] text-center md:text-left">
               Still not convinced?
             </h3>
-            <h3 className="text-[#0f1728] mt- [-8px] md:mt-[-0px] text-center md:text-left">
+            <h3 className="text-[#000000] mt- [-8px] md:mt-[-0px] text-center md:text-left">
               We've got the answers
             </h3>
           </motion.div>
@@ -98,7 +98,7 @@ function Faq() {
             amount: "some",
             once: true,
           }}
-          className="text-[18px] mt-5 md:mt-0 leading-[24.3px] tracking-[-0.54px] be-vietnam-pro-medium text-[#0f1728] bg-transparent rounded-full px-[24px] py-[24px] md:px-5 w-full text-center"
+          className="text-[18px] mt-5 md:mt-0 leading-[24.3px] tracking-[-0.54px] be-vietnam-pro-medium text-[#000000] bg-transparent rounded-full px-[24px] py-[24px] md:px-5 w-full text-center"
         >
           Still have more questions? Speak to our
           <button
@@ -108,7 +108,16 @@ function Faq() {
             Program Counsellor
           </button>
           .
+          <div className="text-center mt-2">
+      <button
+                onClick={handleClick}
+                className="relative px-8 py-2 text-red-600 poppins-medium rounded-md bg-white isolation-auto z-10 border-2 border-red-600 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-red-600 before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700 hover:text-white"
+              >
+               Call Now
+              </button>
+      </div>
         </motion.h4>
+        
       </section>
     </>
   );

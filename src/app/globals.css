@@ -9,7 +9,6 @@
   margin: 0;
 }
 
-
 body {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 400;
@@ -19,6 +18,12 @@ body {
 .ibm-plex-mono-semibold {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-small {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -46,13 +51,11 @@ body {
   font-style: normal;
 }
 
-
-
 /* Default styles for circular video container */
 .circular-container {
-  width: 480px; /* Adjust size as needed for larger screens */
-  height: 480px; /* Adjust size as needed for larger screens */
-  border-radius: 50%; /* Circular shape */
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
   overflow: hidden;
   position: relative;
 }
@@ -60,96 +63,256 @@ body {
 .circular-video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure video covers entire circular container */
-  border-radius: 50%; /* Ensure video inherits circular shape */
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* Media query for smaller screens */
 @media (max-width: 991px) {
   .circular-container {
-      width: 370px; /* Adjust size for tablets */
-      height: 370px; /* Adjust size for tablets */
+    width: 370px;
+    height: 370px;
   }
-  .img-width-reducer{
-      width: 440px;
+  .img-width-reducer {
+    width: 440px;
   }
 }
 
 /* Media query for phones */
 @media (max-width: 767px) {
   .circular-container {
-      width: 320px; /* Adjust size for phones */
-      height: 320px; /* Adjust size for phones */
+    width: 320px;
+    height: 320px;
   }
-  .img-width-reducer{
-      width: 345px;
+  .img-width-reducer {
+    width: 345px;
   }
 }
 
 /* Media query for phones */
 @media (max-width: 575px) {
   .circular-container {
-      width: 300px; /* Adjust size for phones */
-      height: 300px; /* Adjust size for phones */
+    width: 300px;
+    height: 300px;
   }
 }
-/* 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
-
 
 @media (max-width: 768px) {
   .card-container {
-    height: auto; /* Adjusts height to fit content on smaller screens */
-    width: 300px; /* Adjusts width to fit content on smaller screens */
+    height: auto;
+    width: 300px;
   }
 }
 
-
-
 @media (max-width: 768px) {
   .text-left {
-text-align: left;
+    text-align: left;
   }
 }
 
 /*CSS to customize the React Player play button icon */
 .react-player__shadow {
   background-color: red !important;
- }
+}
 
- /*CSS to customize Marquee */
- .image_wrapper {
+/*CSS to customize Marquee */
+.image_wrapper {
   margin: 0px 30px;
 }
 
 .image_wrapper img {
   width: 80%;
+}
+
+/* button css */
+.button {
+  position: relative;
+  width: 10rem;
+  height: 3rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.button svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.border {
+  width: 100%;
+  height: 100%;
+  stroke: rgb(190, 2, 2);
+  stroke-width: 2px;
+  fill: #ffffff00;
+  rx: 1em;
+  ry: 1em;
+  stroke-dasharray: 25;
+  transition: fill 0.25s;
+  animation: 4s linear infinite stroke-animation;
+}
+
+.button:hover .border {
+  fill: #0001;
+}
+
+.button:focus .border {
+  transition: fill 0.25s 7.75s;
+  fill: #0000;
+}
+
+@keyframes stroke-animation {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.txt-upload {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txt-upload::after {
+  content: "";
+}
+
+.button:focus .rect {
+  stroke-dasharray: 50;
+}
+.button:focus .border {
+  stroke: #0000;
+}
+
+.button:focus .txt-upload {
+  opacity: 0;
+  transition: opacity 0.25s 8s;
+}
+
+.button:focus .txt-upload::after {
+  animation: 0.66666s anim step-end forwards,
+    1.33333s 0.6666s anim2 linear infinite alternate;
+}
+
+@keyframes anim {
+  0% {
+    content: "i";
+  }
+  50% {
+    content: "in";
+  }
+  to {
+    content: "ing";
+  }
+}
+
+@keyframes anim2 {
+  0% {
+    content: "ing";
+  }
+  33% {
+    content: "ing.";
+  }
+  66% {
+    content: "ing..";
+  }
+  to {
+    content: "ing...";
+  }
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  stroke: #0055d4;
+  stroke-width: 2px;
+  fill: none;
+  rx: 1em;
+  ry: 1em;
+  stroke-dasharray: 0 100;
+}
+
+.button:focus .loading {
+  transition: stroke 0.5s 7.5s, stroke-dasharray 8s 0.5s ease-out;
+  stroke: #08ca08;
+  stroke-dasharray: 100 0;
+}
+
+.done {
+  fill: none;
+  stroke: #000;
+  stroke-dasharray: 0 100;
+}
+
+.button:focus .done-cloud {
+  transition: stroke-dasharray 0.75s 8.5s ease-out;
+  stroke-dasharray: 100 0;
+}
+
+.button:focus .done-check {
+  transition: stroke-dasharray 0.5s 9.2s ease-out;
+  stroke: #08ca08;
+  stroke-dasharray: 100 0;
+}
+
+/* Accordion css */
+
+.accordion__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 25px;
+}
+
+.accordion__item {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid transparent;
+}
+
+.accordion__header {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+.accordion__header:hover {
+  background: #e7eaed;
+}
+
+.accordion__name {
+  flex: 1;
+  font-size: 20px;
+}
+
+.accordion__details {
+  padding: 0 2rem;
+  overflow: hidden;
+  height: 0;
+}
+.accordion__details ul {
+  padding: 1rem 2rem;
+  list-style-type: circle;
+}
+
+.open {
+  border-color: #c10d0d;
+}
+
+.open .accordion__header,
+.open .accordion__number {
+  color: #c9101c;
+}
+
+.open .accordion__details {
+  height: auto;
 }
